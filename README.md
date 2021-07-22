@@ -15,10 +15,12 @@ All this dependes on the DefaultCurrency and the BillsAndCoins for using that is
 
 In the app.config must be indicated the DefaultCurrency in the as follow:
 
-<add key="DefaultCurrency" value="MXN"/>
+	<add key="DefaultCurrency" value="MXN"/>
+
 The bills and coins values for this currency must be declared too in the same section:
 
-<add key="MXN" value="500,200,100,50,20,10,2,1,0.50,0.20,0.10,0.05"/>
+	<add key="MXN" value="500,200,100,50,20,10,2,1,0.50,0.20,0.10,0.05"/>
+
 This way, the system could validate the right values for bill and coins to receive and give money.
 
 If a new currency is required we need add other key and change the DefaultCurrency. Or if we need a new value for a bill, we only added to the key.
